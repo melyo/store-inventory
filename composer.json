@@ -1,0 +1,10 @@
+{
+    "name": "melyo/store-inventory",
+    "description": "Store inventory",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    }
+}
