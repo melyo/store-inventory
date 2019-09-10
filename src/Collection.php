@@ -31,7 +31,7 @@ class Collection implements InventoryInterface, ProductsSoldInterface, ProductsP
         }
         else {
             if (isset($this->products[$productId])) {
-                throw new KeyHasUseException("Key $productId already in use.");
+                throw new \Exception("Product ID ($productId) already in use.");
             }
             else {
                 $this->products[$productId] = $product;
@@ -50,7 +50,7 @@ class Collection implements InventoryInterface, ProductsSoldInterface, ProductsP
         if (isset($this->products[$productId])) {
             return $this->products[$productId];
         } else {
-            throw new KeyInvalidException("Invalid key $productId.");
+            throw new \Exception("Invalid product ID ($productId).");
         }
     }
 
