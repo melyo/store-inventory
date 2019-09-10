@@ -6,7 +6,8 @@ use App\Interfaces\OrderProcessorInterface;
 use App\Products;
 use App\Collection;
 
-class OrderProcessor implements OrderProcessorInterface {
+class OrderProcessor implements OrderProcessorInterface
+{
 
     /**
      * Collection of products
@@ -56,6 +57,16 @@ class OrderProcessor implements OrderProcessorInterface {
             echo "Purchased Pending: ".$this->collection->getPurchasedPendingTotal($productId)."\n";
             echo "Stock Level: ".$this->collection->getStockLevel($productId)."\n\n";
         }
+    }
+
+    /**
+     * Display result on terminal
+     * 
+     * @return array
+     */
+    public function result(): array
+    {
+        return $this->collection->all();
     }
 
     /**

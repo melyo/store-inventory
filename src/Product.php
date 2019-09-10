@@ -2,7 +2,8 @@
 
 namespace App;
 
-class Product {
+class Product
+{
 
     /**
      * Product name

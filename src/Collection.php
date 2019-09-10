@@ -7,7 +7,8 @@ use App\Interfaces\ProductsSoldInterface;
 use App\Interfaces\ProductsPurchasedInterface;
 use App\Product;
 
-class Collection implements InventoryInterface, ProductsSoldInterface, ProductsPurchasedInterface {
+class Collection implements InventoryInterface, ProductsSoldInterface, ProductsPurchasedInterface
+{
 
     /**
      * Collection of products
