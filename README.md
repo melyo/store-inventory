@@ -1,23 +1,5 @@
 # Store Inventory
 
-## Set up
-
-```
-# Clone this repository
-git clone https://github.com/melyo/store-inventory.git
-
-# Go to project directory
-cd store-inventory
-
-# Install dependencies
-composer install
-
-# Run the code
-php index.php
-```
-
----
-
 ## Problem
 
 You are managing the inventory of a small sweet store that sells 5 products:
